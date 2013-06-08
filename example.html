@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Input Abstraction Layer</title>
+        <!-- Scripts -->
+        <script src="js/zepto.min.js"></script>
+        <script src="js/input.js"></script>
+        <!-- Define Adapters -->
+        <script>
+        $.dial.adapter('touch', {
+          'touchstart':'SELECT'
+        }).adapter('mouse', {
+        	'click':'SELECT'
+        }).adapter('keyboard', {
+        	'keydown':{
+        		'13':'SELECT',
+            '38':'ARROW_UP'
+        	}
+        })
+        </script>
+        <!-- Pubsub Listeners -->
+        <script>
+        $.dial.on('SELECT', function(e){
+        	console.log(arguments);
+            alert('you click a tag: ' + this.tagName);
+        });
+        $.dial.on('ARROW_UP', function(e){
+        	alert('up');
+        });
+        </script>
+    </head>
+    <body>
+    
+    <h1>Input Abstraction Layer</h1>
+    
+    <p>...</p>
+    
+    <p><a href="#">Click Me</a></p>
+    
+    </body>
+</html>
