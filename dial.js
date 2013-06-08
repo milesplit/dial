@@ -3,6 +3,8 @@ Copyright (c) 2013 MileSplit, Inc.
 Author: Jason Byrne
 Contributor: Alan Szlosek
 License: MIT
+
+https://github.com/milesplit/dial
 */
 /*   USAGE
 	Requires: jQuery or Zepto
