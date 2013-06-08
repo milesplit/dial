@@ -58,7 +58,6 @@ $.dial.supports.touch ?
 
 ====
 
-Application Input Model
 
 Premise
 
