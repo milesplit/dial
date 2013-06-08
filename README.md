@@ -5,7 +5,7 @@ Device Input Abstraction Layer
 
 A plugin for jQuery or Zepto that allows you to handle input from any number of devices, with various types of input events, by mapping the events to a common set of pubsub events. This allows them to be handled, independent of worrying about the platform.
 
-My main motivation for writing this object (other than theoretical desire) was trying to write web apps that could run on a computer, smartphone, tablet, and television set. Maybe even Google Glass soon. I got tired of having to worry about setting all of these different event listeners. The various actions you take that are physically different based on the device, really have the same intention from the user's perspective. So the desire here is to abstract away the actual device input, so that you can focus on the purpose of that user interaction--setting your callback on that.
+My main motivation for writing this object (other than theoretical desire) was trying to write web apps that could run on a computer, smartphone, tablet, and television set. Maybe even Google Glass soon. I got tired of having to worry about setting all of these different event listeners. The various actions you take that are physically different based on the device, really all just indicate the same set of intentions from the user's perspective: choose this, scroll over, next item, play, pause. So the desire here is to abstract away the actual device input, so that you can focus on the purpose of that user interaction--setting your callback on that.
 
 Here is a JS Fiddle to play with it:
 http://jsfiddle.net/milesplit/nemfA/4/
