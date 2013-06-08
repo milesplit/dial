@@ -42,12 +42,12 @@ Test Support:
 
 We built in a few properties and methods to test for the support your device has for various inputs.
 
-$.dial.supports.touch
-$.dial.supports.mouse
-$.dial.supports.keyboard
-$.dial.supports.orientation
-$.dial.supports.geolocation
-$.dial.supports.speech
+  * $.dial.supports.touch
+  * $.dial.supports.mouse
+  * $.dial.supports.keyboard
+  * $.dial.supports.orientation
+  * $.dial.supports.geolocation
+  * $.dial.supports.speech
 
 We will add more when they come into use. You might use it like this....
 
