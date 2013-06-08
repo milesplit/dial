@@ -73,33 +73,33 @@ It is time that we abstract these various events into what they really are: inpu
 
 Mediums and Devices
 
-To illustrated the point, here are some of the various mediums and input types:
+To illustrate the point, here are some of the various mediums and input types:
 
-No Inputs (such as paper, just listing it just for completeness)
-Mouse
-Keyboard
-Touch
-Voice
-Proximity to another device
-Geolocation
-Hand gestures
-Eye movement
-Brain activity
-Remote control via app on another device
-Motion: Tilting, turning, shaking the device as in accelerometer or gyroscope
-Button press on device (not keyboard)
-Whatever is next
+  * No Inputs (such as paper, just listing it just for completeness)
+  * Mouse
+  * Keyboard
+  * Touch
+  * Voice
+  * Proximity to another device
+  * Geolocation
+  * Hand gestures
+  * Eye movement
+  * Brain activity
+  * Remote control via app on another device
+  * Motion: Tilting, turning, shaking the device as in accelerometer or gyroscope
+  * Resize window
+  * Button press on device (not keyboard)
+  * Whatever is next
 
 Handling these Inputs
 
 The potential exists for our applications to be smart to any of these potential inputs by abstracting them away. Here are the steps to do this in our applications (this would be consolidated into a framework).
 
-Feature detect device capabilities
-Implement a pub-sub framework
-Kill standard event handling (such as clicks), so we can override it
-Implement simple adapters for each recognized input
-Listen for the various events and use the adapters to translate that into standard input terminology
-Publish that input event over pub-sub, so that it can be handled appropriately by the app
+  * Feature detect device capabilities
+  * Implement a pub-sub framework
+  * Implement simple adapters for each recognized input
+  * Listen for the various events and use the adapters to translate that into standard input terminology
+  * Publish that input event over pub-sub, so that it can be handled appropriately by the app
 
 Adapters
 
@@ -111,28 +111,31 @@ Proposed Standard Terminology
 
 The input events should be all uppercase, mainly just to make them stand out. And it is similar to the common formatting you’d see for SQL syntax (“SELECT id, name FROM”) or for like an API where it is common to uppercase the HTTP methods (“GET /person/1234”).
 
-SELECT
-FOCUS
-DETAILS
-STEP_LEFT
-STEP_RIGHT
-STEP_UP
-STEP_DOWN
-PAGE_LEFT
-PAGE_RIGHT
-PAGE_UP
-PAGE_DOWN
-PLAY
-PAUSE
-STOP
-FAST_FORWARD
-REWIND
-NEXT
-PREVIOUS
-DRAG_START
-DRAG_MOVE
-DRAG_OVER
-DRAG_DROP
-TEXT
-….
+  * SELECT
+  * FOCUS
+  * DETAILS
+  * STEP_LEFT
+  * STEP_RIGHT
+  * STEP_UP
+  * STEP_DOWN
+  * PAGE_LEFT
+  * PAGE_RIGHT
+  * PAGE_UP
+  * PAGE_DOWN
+  * PLAY
+  * PAUSE
+  * STOP
+  * FAST_FORWARD
+  * REWIND
+  * NEXT
+  * PREVIOUS
+  * DRAG_START
+  * DRAG_MOVE
+  * DRAG_OVER
+  * DRAG_DROP
+  * TEXT
+  * SAY
+  * READ
+  * LOCATION
+  * ...
 
