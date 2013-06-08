@@ -137,5 +137,6 @@ The input events should be all uppercase, mainly just to make them stand out. An
   * SAY
   * READ
   * LOCATION
+  * REDRAW
   * ...
 
