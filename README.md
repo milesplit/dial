@@ -5,6 +5,9 @@ Device Input Abstraction Layer
 
 A plugin for jQuery or Zepto that allows you to handle input from any number of devices, with various types of input events, by mapping the events to a common set of pubsub events. This allows them to be handled, independent of worrying about the platform.
 
+Here is a JS Fiddle to play with it:
+http://jsfiddle.net/milesplit/nemfA/4/
+
 ====
 
 Usage:
