@@ -15,15 +15,19 @@ Usage:
 Dealind with Adapters:
 
 $.dial.adapter()
+
 With no arguments, it will return all of the adapters you've set.
 
 $.dial.adapter('mouse')
+
 with the type argument, it will return that specific adapter.
 
 $.dial.adapter('mouse', { 'click':'SELECT' })
+
 With the type and then a single-dimension key-value object, it will map those events in the object to what you specify as the value.
 
 $.dial.adapter('keyboard', { 'keydown':{ 13:'SELECT' } })
+
 With the type and then a multi-dimension array... the event is the first key... and then in the inner object is the e.which value. In the case of keyboard input e.which is the key code. For a mouse event, it would be the mouse button clicked.
 
 Pub-Sub:
@@ -31,6 +35,7 @@ Pub-Sub:
 There is an inner pubsub object built into DIAL. You can even leverage it for other things, if you so choose.
 
 $.dial.on('SELECT', function(e, eventName){ ));
+
 Pass in the name of the event you want to watch and then the callback function. In the scope of the callback function, "this" is the element that was the target and "e" is the original event object (as from jQuery). The second argument is the name of the pubsub event, in case you are handling multiple listeners in one callback.
 
 Test Support:
